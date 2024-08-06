@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dropdown Navbar</title>
+  <style>
+
+    body{
+        background-image: url(./clement-helardot-95YRwf6CNw8-unsplash.jpg);
+        background-repeat: no no-repeat;
+        background-size: cover;
+    }
+    /* Styles for the navbar */
+    .navbar {
+      overflow: hidden;
+      background-color: black;
+      display: flex;
+      justify-content: flex-end;
+      
+    }
+
+    /* Navbar links */
+    .navbar a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    /* Dropdown container */
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+
+    /* Dropdown button */
+    .dropdown .dropbtn {
+      font-size: 18px;
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 20px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+
+    /* Dropdown content (hidden by default) */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: black;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+      float: none;
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    a:hover{
+        color: yellow;
+    }
+   
+  </style>
+</head>
+<body>
+    
+    
+<div class="navbar">
+   
+  <a href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#Services">Services</a>
+  
+  <div class="dropdown">
+    <button class="dropbtn">Other Information 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#about">About Us</a>
+      <a href="#background">Background</a>
+      <a href="#contact">Products</a>
+    </div>
+    
+  </div>
+  <a href="#contact">Contact Us</a>
+  
+  
+</div>
+
+</body>
+</html>
